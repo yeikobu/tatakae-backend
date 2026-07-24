@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0deaee1-159c-4619-89bd-a6c09a5493de" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.claude/settings.local.json" beforeDir="false" afterPath="$PROJECT_DIR$/../.claude/settings.local.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Tatakae.xcodeproj/project.xcworkspace/xcuserdata/Jacob.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../Tatakae.xcodeproj/project.xcworkspace/xcuserdata/Jacob.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Tatakae/Data/Services/AICoachService.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../Tatakae/Data/Services/AICoachService.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tatakae/InfoPlist.xcstrings" beforeDir="false" afterPath="$PROJECT_DIR$/../Tatakae/InfoPlist.xcstrings" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Tatakae/Presentation/AICoach/ProgramCoachViewModel.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../Tatakae/Presentation/AICoach/ProgramCoachViewModel.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Exception" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -45,10 +46,17 @@
     "JUnit.TrainingSessionTest.executor": "Run",
     "JUnit.TrainingSessionTest.isTrainingSessionValid.executor": "Run",
     "JUnit.TrainingSessionTest.shouldThrowExceptionWhenRepsAreInconsistent.executor": "Run",
+    "JUnit.UserTest.executor": "Run",
+    "JUnit.UserTest.isValidUserTest.executor": "Run",
+    "JUnit.UserTest.shouldNotInitializeUserWithNullOrEmprtyUserName.executor": "Run",
+    "JUnit.UserTest.shouldNotInitializeUserWithNullProperties.executor": "Run",
+    "JUnit.UserTest.shouldThrowExceptionWhenUserIdIsNullOrEmpty.executor": "Run",
+    "Maven.tatakae-backend [clean,test...].executor": "Run",
     "Maven.tatakae-backend [clean].executor": "Run",
     "Maven.tatakae-backend [org.jacoco:jacoco-maven-plugin:0.8.12:check].executor": "Run",
     "Maven.tatakae-backend [org.jacoco:jacoco-maven-plugin:0.8.12:report-aggregate].executor": "Run",
     "Maven.tatakae-backend [org.jacoco:jacoco-maven-plugin:0.8.12:report].executor": "Run",
+    "Maven.tatakae-backend [org.jacoco:jacoco-maven-plugin:0.8.14:report].executor": "Run",
     "Maven.tatakae-backend [test].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -67,7 +75,7 @@
   }
 }]]></component>
   <component name="RunManager" selected="Maven.tatakae-backend [clean,test...]">
-    <configuration name="TrainingSessionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tatakae-backend" />
       <extension name="coverage">
         <pattern>
@@ -76,14 +84,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="fit.tatakae.domain" />
-      <option name="MAIN_CLASS_NAME" value="fit.tatakae.domain.TrainingSessionTest" />
-      <option name="METHOD_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="fit.tatakae.domain.UserTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrainingSessionTest.isTrainingSessionValid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest.isValidUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tatakae-backend" />
       <extension name="coverage">
         <pattern>
@@ -92,14 +99,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="fit.tatakae.domain" />
-      <option name="MAIN_CLASS_NAME" value="fit.tatakae.domain.TrainingSessionTest" />
-      <option name="METHOD_NAME" value="isTrainingSessionValid" />
+      <option name="MAIN_CLASS_NAME" value="fit.tatakae.domain.UserTest" />
+      <option name="METHOD_NAME" value="isValidUserTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrainingSessionTest.shouldThrowExceptionWhenRepsAreInconsistent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest.shouldNotInitializeUserWithNullOrEmprtyUserName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tatakae-backend" />
       <extension name="coverage">
         <pattern>
@@ -108,8 +115,40 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="fit.tatakae.domain" />
-      <option name="MAIN_CLASS_NAME" value="fit.tatakae.domain.TrainingSessionTest" />
-      <option name="METHOD_NAME" value="shouldThrowExceptionWhenRepsAreInconsistent(int)" />
+      <option name="MAIN_CLASS_NAME" value="fit.tatakae.domain.UserTest" />
+      <option name="METHOD_NAME" value="shouldNotInitializeUserWithNullOrEmprtyUserName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.shouldNotInitializeUserWithNullProperties" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tatakae-backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fit.tatakae.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fit.tatakae.domain" />
+      <option name="MAIN_CLASS_NAME" value="fit.tatakae.domain.UserTest" />
+      <option name="METHOD_NAME" value="shouldNotInitializeUserWithNullProperties" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.shouldThrowExceptionWhenUserIdIsNullOrEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tatakae-backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fit.tatakae.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fit.tatakae.domain" />
+      <option name="MAIN_CLASS_NAME" value="fit.tatakae.domain.UserTest" />
+      <option name="METHOD_NAME" value="shouldThrowExceptionWhenUserIdIsNullOrEmpty(java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,16 +187,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.TrainingSessionTest" />
-      <item itemvalue="JUnit.TrainingSessionTest.isTrainingSessionValid" />
-      <item itemvalue="JUnit.TrainingSessionTest.shouldThrowExceptionWhenRepsAreInconsistent" />
+      <item itemvalue="JUnit.UserTest" />
+      <item itemvalue="JUnit.UserTest.isValidUserTest" />
+      <item itemvalue="JUnit.UserTest.shouldNotInitializeUserWithNullOrEmprtyUserName" />
+      <item itemvalue="JUnit.UserTest.shouldNotInitializeUserWithNullProperties" />
+      <item itemvalue="JUnit.UserTest.shouldThrowExceptionWhenUserIdIsNullOrEmpty" />
       <item itemvalue="Maven.tatakae-backend [clean,test...]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TrainingSessionTest.shouldThrowExceptionWhenRepsAreInconsistent" />
-        <item itemvalue="JUnit.TrainingSessionTest" />
-        <item itemvalue="JUnit.TrainingSessionTest.isTrainingSessionValid" />
+        <item itemvalue="JUnit.UserTest" />
+        <item itemvalue="JUnit.UserTest.shouldThrowExceptionWhenUserIdIsNullOrEmpty" />
+        <item itemvalue="JUnit.UserTest.isValidUserTest" />
+        <item itemvalue="JUnit.UserTest.shouldNotInitializeUserWithNullOrEmprtyUserName" />
+        <item itemvalue="JUnit.UserTest.shouldNotInitializeUserWithNullProperties" />
       </list>
     </recent_temporary>
   </component>
