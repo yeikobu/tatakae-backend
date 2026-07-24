@@ -75,4 +75,39 @@ public class TrainingSessionTest {
             new TrainingSession(user, exercise, reps, start, end, clock);
         });
     }
+
+    @Test
+    public void shouldThrowExceptionWhenEndIsBeforeStart() {
+        // Arrange
+        User user = new User("axw1", "Jacob", "CL", PrivacyLevel.PUBLIC);
+        Exercise exercise = Exercise.PULL_UP;
+        int reps = 65;
+        Instant dateExecuted = Instant.parse("2026-07-22T10:00:00Z");
+        Instant end = dateExecuted;
+        Instant start = end.plusSeconds(60);
+        Clock clock = Clock.fixed(dateExecuted, ZoneOffset.UTC);
+
+
+        //Act and Assert
+        assertThrows(InconsistentSessionException.class, () -> {
+            new TrainingSession(user, exercise, reps, start, end, clock);
+        });
+    }
+
+    @Test
+    public void shouldThrowExceptionWhenStartIsEqualToEnd() {
+        // Arrange
+        User user = new User("axw1", "Jacob", "CL", PrivacyLevel.PUBLIC);
+        Exercise exercise = Exercise.PULL_UP;
+        int reps = 65;
+        Instant dateExecuted = Instant.parse("2026-07-22T10:00:00Z");
+        Instant start = dateExecuted;
+        Instant end = Instant.parse("2026-07-22T10:00:00Z");
+        Clock clock = Clock.fixed(dateExecuted, ZoneOffset.UTC);
+
+        //Act and Assert
+        assertThrows(InconsistentSessionException.class, () -> {
+            new TrainingSession(user, exercise, reps, start, end, clock);
+        });
+    }
 }

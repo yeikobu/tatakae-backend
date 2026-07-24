@@ -20,8 +20,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Exception" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -43,9 +44,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.LeaderboardTest.shouldReturnRankingOrderedByRepsDescending.executor": "Run",
     "JUnit.TrainingSessionTest.executor": "Run",
     "JUnit.TrainingSessionTest.isTrainingSessionValid.executor": "Run",
+    "JUnit.TrainingSessionTest.shouldThrowExceptionWhenEndBeginsAfterStart.executor": "Run",
+    "JUnit.TrainingSessionTest.shouldThrowExceptionWhenEndIsBeforeStart.executor": "Run",
     "JUnit.TrainingSessionTest.shouldThrowExceptionWhenRepsAreInconsistent.executor": "Run",
+    "JUnit.TrainingSessionTest.shouldThrowExceptionWhenStartIsEqualToEnd.executor": "Run",
     "JUnit.TrainingSessionTest.shouldTrownAndExceptionWhenRepsAreMoreThanTheMaxRepsAllowedPerMinute.executor": "Run",
     "JUnit.UserTest.executor": "Run",
     "JUnit.UserTest.isValidUserTest.executor": "Run",
@@ -72,15 +77,31 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/Users/jacob/Developer/Tatakae/tatakae-backend/src/main/java/org/example/Main.java",
-    "settings.editor.selected.configurable": "editor.preferences.appearance"
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TrainingSessionTest">
+  <component name="RunManager" selected="Maven.tatakae-backend [clean,test...]">
+    <configuration name="LeaderboardTest.shouldReturnRankingOrderedByRepsDescending" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tatakae-backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fit.tatakae.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fit.tatakae.domain" />
+      <option name="MAIN_CLASS_NAME" value="fit.tatakae.domain.LeaderboardTest" />
+      <option name="METHOD_NAME" value="shouldReturnRankingOrderedByRepsDescending" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TrainingSessionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tatakae-backend" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fit.tatakae.domain.*" />
+          <option name="PATTERN" value="fit.tatakae.domain.ports.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,64 +112,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrainingSessionTest.shouldTrownAndExceptionWhenRepsAreMoreThanTheMaxRepsAllowedPerMinute" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TrainingSessionTest.shouldThrowExceptionWhenEndBeginsAfterStart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tatakae-backend" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fit.tatakae.domain.*" />
+          <option name="PATTERN" value="fit.tatakae.domain.ports.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="fit.tatakae.domain" />
       <option name="MAIN_CLASS_NAME" value="fit.tatakae.domain.TrainingSessionTest" />
-      <option name="METHOD_NAME" value="shouldTrownAndExceptionWhenRepsAreMoreThanTheMaxRepsAllowedPerMinute" />
+      <option name="METHOD_NAME" value="shouldThrowExceptionWhenEndBeginsAfterStart" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TrainingSessionTest.shouldThrowExceptionWhenEndIsBeforeStart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tatakae-backend" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fit.tatakae.domain.*" />
+          <option name="PATTERN" value="fit.tatakae.domain.ports.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="fit.tatakae.domain" />
-      <option name="MAIN_CLASS_NAME" value="fit.tatakae.domain.UserTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest.isValidUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="tatakae-backend" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fit.tatakae.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fit.tatakae.domain" />
-      <option name="MAIN_CLASS_NAME" value="fit.tatakae.domain.UserTest" />
-      <option name="METHOD_NAME" value="isValidUserTest" />
+      <option name="MAIN_CLASS_NAME" value="fit.tatakae.domain.TrainingSessionTest" />
+      <option name="METHOD_NAME" value="shouldThrowExceptionWhenEndIsBeforeStart" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.shouldThrowExceptionWhenUserIdIsNullOrEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TrainingSessionTest.shouldThrowExceptionWhenStartIsEqualToEnd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tatakae-backend" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fit.tatakae.domain.*" />
+          <option name="PATTERN" value="fit.tatakae.domain.ports.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="fit.tatakae.domain" />
-      <option name="MAIN_CLASS_NAME" value="fit.tatakae.domain.UserTest" />
-      <option name="METHOD_NAME" value="shouldThrowExceptionWhenUserIdIsNullOrEmpty(java.lang.String)" />
+      <option name="MAIN_CLASS_NAME" value="fit.tatakae.domain.TrainingSessionTest" />
+      <option name="METHOD_NAME" value="shouldThrowExceptionWhenStartIsEqualToEnd" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -187,20 +193,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.TrainingSessionTest.shouldTrownAndExceptionWhenRepsAreMoreThanTheMaxRepsAllowedPerMinute" />
-      <item itemvalue="JUnit.UserTest" />
-      <item itemvalue="JUnit.UserTest.isValidUserTest" />
-      <item itemvalue="JUnit.UserTest.shouldThrowExceptionWhenUserIdIsNullOrEmpty" />
+      <item itemvalue="JUnit.LeaderboardTest.shouldReturnRankingOrderedByRepsDescending" />
+      <item itemvalue="JUnit.TrainingSessionTest.shouldThrowExceptionWhenEndBeginsAfterStart" />
+      <item itemvalue="JUnit.TrainingSessionTest.shouldThrowExceptionWhenEndIsBeforeStart" />
+      <item itemvalue="JUnit.TrainingSessionTest.shouldThrowExceptionWhenStartIsEqualToEnd" />
       <item itemvalue="JUnit.TrainingSessionTest" />
       <item itemvalue="Maven.tatakae-backend [clean,test...]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LeaderboardTest.shouldReturnRankingOrderedByRepsDescending" />
+        <item itemvalue="JUnit.TrainingSessionTest.shouldThrowExceptionWhenStartIsEqualToEnd" />
+        <item itemvalue="JUnit.TrainingSessionTest.shouldThrowExceptionWhenEndIsBeforeStart" />
+        <item itemvalue="JUnit.TrainingSessionTest.shouldThrowExceptionWhenEndBeginsAfterStart" />
         <item itemvalue="JUnit.TrainingSessionTest" />
-        <item itemvalue="JUnit.TrainingSessionTest.shouldTrownAndExceptionWhenRepsAreMoreThanTheMaxRepsAllowedPerMinute" />
-        <item itemvalue="JUnit.UserTest" />
-        <item itemvalue="JUnit.UserTest.shouldThrowExceptionWhenUserIdIsNullOrEmpty" />
-        <item itemvalue="JUnit.UserTest.isValidUserTest" />
       </list>
     </recent_temporary>
   </component>

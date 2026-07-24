@@ -29,6 +29,14 @@ public class TrainingSession {
         if(reps > exercise.getExerciseMaxRepsAllowedPerMinute()) {
             throw new FraudulentSessionException("Registered exercise max reps are greater than exercise max reps allowed per minute");
         }
+
+        if(end.isBefore(start)) {
+            throw new InconsistentSessionException("End time must be after start time");
+        }
+
+        if(start.equals(end)) {
+            throw new InconsistentSessionException("Start time can not be equal to end time");
+        }
     }
 
     // MARK: - Getters
