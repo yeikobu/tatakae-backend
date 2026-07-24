@@ -44,6 +44,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.LeaderboardServiceTest.shouldReturnRankingOrderedByRepsDescending.executor": "Run",
     "JUnit.LeaderboardTest.shouldReturnRankingOrderedByRepsDescending.executor": "Run",
     "JUnit.TrainingSessionTest.executor": "Run",
     "JUnit.TrainingSessionTest.isTrainingSessionValid.executor": "Run",
@@ -80,8 +81,8 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager" selected="Maven.tatakae-backend [clean,test...]">
-    <configuration name="LeaderboardTest.shouldReturnRankingOrderedByRepsDescending" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.LeaderboardServiceTest.shouldReturnRankingOrderedByRepsDescending">
+    <configuration name="LeaderboardServiceTest.shouldReturnRankingOrderedByRepsDescending" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tatakae-backend" />
       <extension name="coverage">
         <pattern>
@@ -90,7 +91,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="fit.tatakae.domain" />
-      <option name="MAIN_CLASS_NAME" value="fit.tatakae.domain.LeaderboardTest" />
+      <option name="MAIN_CLASS_NAME" value="fit.tatakae.domain.LeaderboardServiceTest" />
       <option name="METHOD_NAME" value="shouldReturnRankingOrderedByRepsDescending" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -193,7 +194,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.LeaderboardTest.shouldReturnRankingOrderedByRepsDescending" />
+      <item itemvalue="JUnit.LeaderboardServiceTest.shouldReturnRankingOrderedByRepsDescending" />
       <item itemvalue="JUnit.TrainingSessionTest.shouldThrowExceptionWhenEndBeginsAfterStart" />
       <item itemvalue="JUnit.TrainingSessionTest.shouldThrowExceptionWhenEndIsBeforeStart" />
       <item itemvalue="JUnit.TrainingSessionTest.shouldThrowExceptionWhenStartIsEqualToEnd" />
@@ -202,7 +203,7 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LeaderboardTest.shouldReturnRankingOrderedByRepsDescending" />
+        <item itemvalue="JUnit.LeaderboardServiceTest.shouldReturnRankingOrderedByRepsDescending" />
         <item itemvalue="JUnit.TrainingSessionTest.shouldThrowExceptionWhenStartIsEqualToEnd" />
         <item itemvalue="JUnit.TrainingSessionTest.shouldThrowExceptionWhenEndIsBeforeStart" />
         <item itemvalue="JUnit.TrainingSessionTest.shouldThrowExceptionWhenEndBeginsAfterStart" />
