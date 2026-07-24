@@ -13,7 +13,7 @@ public enum Exercise {
         this.maxRepsPerMinute = maxRepsPerMinute;
     }
 
-    public int getMaxRepsPerMinute() {
+    public int getExerciseMaxRepsAllowedPerMinute() {
         return maxRepsPerMinute;
     }
 }

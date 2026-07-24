@@ -1,5 +1,6 @@
 package fit.tatakae.domain;
 
+import fit.tatakae.domain.exception.FraudulentSessionException;
 import fit.tatakae.domain.exception.InconsistentSessionException;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -53,6 +54,25 @@ public class TrainingSessionTest {
         // Assert
         assertThrows(InconsistentSessionException.class, () -> {
             new TrainingSession(user, exercise, invalidQuantityReps, start, end, clock);
+        });
+    }
+
+    // Prueba que el usuario haya ejecutado una serie con repeticiones realistas
+    @Test
+    public void shouldTrownAndExceptionWhenRepsAreMoreThanTheMaxRepsAllowedPerMinute() {
+        // Arrange
+        User user = new User("axw1", "Jacob", "CL", PrivacyLevel.PUBLIC);
+        Exercise exercise = Exercise.PULL_UP;
+        int reps = 78;
+        Instant dateExecuted = Instant.parse("2026-07-22T10:00:00Z");
+        Instant start = dateExecuted;
+        Instant end = start.plusSeconds(60);
+        Clock clock = Clock.fixed(dateExecuted, ZoneOffset.UTC);
+
+        // Act
+        // Assert
+        assertThrows(FraudulentSessionException.class, () -> {
+            new TrainingSession(user, exercise, reps, start, end, clock);
         });
     }
 }

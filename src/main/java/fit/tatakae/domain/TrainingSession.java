@@ -1,5 +1,6 @@
 package fit.tatakae.domain;
 
+import fit.tatakae.domain.exception.FraudulentSessionException;
 import fit.tatakae.domain.exception.InconsistentSessionException;
 
 import java.time.Clock;
@@ -23,6 +24,10 @@ public class TrainingSession {
 
         if(reps <= 0) {
             throw new InconsistentSessionException("Reps quantity must be greater than 0 to save a training session");
+        }
+
+        if(reps > exercise.getExerciseMaxRepsAllowedPerMinute()) {
+            throw new FraudulentSessionException("Registered exercise max reps are greater than exercise max reps allowed per minute");
         }
     }
 
