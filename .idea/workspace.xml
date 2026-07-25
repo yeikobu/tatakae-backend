@@ -44,6 +44,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.LeaderboardServiceTest.executor": "Run",
+    "JUnit.LeaderboardServiceTest.shouldBreakRepsTieWithTheOldestSession.executor": "Run",
+    "JUnit.LeaderboardServiceTest.shouldReturnLocalRanking.executor": "Run",
+    "JUnit.LeaderboardServiceTest.shouldReturnOnlyPublicUsersInRanking.executor": "Run",
     "JUnit.LeaderboardServiceTest.shouldReturnRankingOrderedByRepsDescending.executor": "Run",
     "JUnit.LeaderboardTest.shouldReturnRankingOrderedByRepsDescending.executor": "Run",
     "JUnit.TrainingSessionTest.executor": "Run",
@@ -81,8 +85,8 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.LeaderboardServiceTest.shouldReturnRankingOrderedByRepsDescending">
-    <configuration name="LeaderboardServiceTest.shouldReturnRankingOrderedByRepsDescending" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Maven.tatakae-backend [clean,test...]">
+    <configuration name="LeaderboardServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tatakae-backend" />
       <extension name="coverage">
         <pattern>
@@ -92,70 +96,70 @@
       </extension>
       <option name="PACKAGE_NAME" value="fit.tatakae.domain" />
       <option name="MAIN_CLASS_NAME" value="fit.tatakae.domain.LeaderboardServiceTest" />
-      <option name="METHOD_NAME" value="shouldReturnRankingOrderedByRepsDescending" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TrainingSessionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="tatakae-backend" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fit.tatakae.domain.ports.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fit.tatakae.domain" />
-      <option name="MAIN_CLASS_NAME" value="fit.tatakae.domain.TrainingSessionTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrainingSessionTest.shouldThrowExceptionWhenEndBeginsAfterStart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LeaderboardServiceTest.shouldBreakRepsTieWithTheOldestSession" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tatakae-backend" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fit.tatakae.domain.ports.*" />
+          <option name="PATTERN" value="fit.tatakae.domain.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="fit.tatakae.domain" />
-      <option name="MAIN_CLASS_NAME" value="fit.tatakae.domain.TrainingSessionTest" />
-      <option name="METHOD_NAME" value="shouldThrowExceptionWhenEndBeginsAfterStart" />
+      <option name="MAIN_CLASS_NAME" value="fit.tatakae.domain.LeaderboardServiceTest" />
+      <option name="METHOD_NAME" value="shouldBreakRepsTieWithTheOldestSession" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrainingSessionTest.shouldThrowExceptionWhenEndIsBeforeStart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LeaderboardServiceTest.shouldReturnGlobalRankingOrderedByRepsDescending" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tatakae-backend" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fit.tatakae.domain.ports.*" />
+          <option name="PATTERN" value="fit.tatakae.domain.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="fit.tatakae.domain" />
-      <option name="MAIN_CLASS_NAME" value="fit.tatakae.domain.TrainingSessionTest" />
-      <option name="METHOD_NAME" value="shouldThrowExceptionWhenEndIsBeforeStart" />
+      <option name="MAIN_CLASS_NAME" value="fit.tatakae.domain.LeaderboardServiceTest" />
+      <option name="METHOD_NAME" value="shouldReturnGlobalRankingOrderedByRepsDescending" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrainingSessionTest.shouldThrowExceptionWhenStartIsEqualToEnd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LeaderboardServiceTest.shouldReturnLocalRanking" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tatakae-backend" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fit.tatakae.domain.ports.*" />
+          <option name="PATTERN" value="fit.tatakae.domain.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="fit.tatakae.domain" />
-      <option name="MAIN_CLASS_NAME" value="fit.tatakae.domain.TrainingSessionTest" />
-      <option name="METHOD_NAME" value="shouldThrowExceptionWhenStartIsEqualToEnd" />
+      <option name="MAIN_CLASS_NAME" value="fit.tatakae.domain.LeaderboardServiceTest" />
+      <option name="METHOD_NAME" value="shouldReturnLocalRanking" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeaderboardServiceTest.shouldReturnOnlyPublicUsersInRanking" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tatakae-backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fit.tatakae.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fit.tatakae.domain" />
+      <option name="MAIN_CLASS_NAME" value="fit.tatakae.domain.LeaderboardServiceTest" />
+      <option name="METHOD_NAME" value="shouldReturnOnlyPublicUsersInRanking" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -194,20 +198,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.LeaderboardServiceTest.shouldReturnRankingOrderedByRepsDescending" />
-      <item itemvalue="JUnit.TrainingSessionTest.shouldThrowExceptionWhenEndBeginsAfterStart" />
-      <item itemvalue="JUnit.TrainingSessionTest.shouldThrowExceptionWhenEndIsBeforeStart" />
-      <item itemvalue="JUnit.TrainingSessionTest.shouldThrowExceptionWhenStartIsEqualToEnd" />
-      <item itemvalue="JUnit.TrainingSessionTest" />
+      <item itemvalue="JUnit.LeaderboardServiceTest" />
+      <item itemvalue="JUnit.LeaderboardServiceTest.shouldBreakRepsTieWithTheOldestSession" />
+      <item itemvalue="JUnit.LeaderboardServiceTest.shouldReturnGlobalRankingOrderedByRepsDescending" />
+      <item itemvalue="JUnit.LeaderboardServiceTest.shouldReturnLocalRanking" />
+      <item itemvalue="JUnit.LeaderboardServiceTest.shouldReturnOnlyPublicUsersInRanking" />
       <item itemvalue="Maven.tatakae-backend [clean,test...]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LeaderboardServiceTest.shouldReturnRankingOrderedByRepsDescending" />
-        <item itemvalue="JUnit.TrainingSessionTest.shouldThrowExceptionWhenStartIsEqualToEnd" />
-        <item itemvalue="JUnit.TrainingSessionTest.shouldThrowExceptionWhenEndIsBeforeStart" />
-        <item itemvalue="JUnit.TrainingSessionTest.shouldThrowExceptionWhenEndBeginsAfterStart" />
-        <item itemvalue="JUnit.TrainingSessionTest" />
+        <item itemvalue="JUnit.LeaderboardServiceTest.shouldBreakRepsTieWithTheOldestSession" />
+        <item itemvalue="JUnit.LeaderboardServiceTest" />
+        <item itemvalue="JUnit.LeaderboardServiceTest.shouldReturnOnlyPublicUsersInRanking" />
+        <item itemvalue="JUnit.LeaderboardServiceTest.shouldReturnLocalRanking" />
+        <item itemvalue="JUnit.LeaderboardServiceTest.shouldReturnGlobalRankingOrderedByRepsDescending" />
       </list>
     </recent_temporary>
   </component>
