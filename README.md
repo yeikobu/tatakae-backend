@@ -15,7 +15,7 @@ This repository contains the **Pure Domain Core** (Core de Entidades de Dominio 
 This project uses **JUnit 5** and **Mockito** to ensure the highest standards of quality.
 - **Rigorous AAA Pattern**: All tests are strictly structured using Arrange, Act, and Assert phases.
 - **Business Exceptions**: Custom exceptions (`InconsistentSessionException`, `FraudulentSessionException`, `InvalidUserException`) are verified with `assertThrows`.
-- **Mocked Dependencies**: `SessionRepository` is stubbed with Mockito (`when(...).thenReturn(...)`) to isolate `Leaderboard` from any real data source.
+- **Mocked Dependencies**: `SessionRepository` is stubbed with Mockito (`when(...).thenReturn(...)`) and verified with `verify(...)` to isolate `LeaderboardService` from any real data source.
 - **Parameterized Tests**: Data-driven testing is used to reduce duplication (e.g. `@ValueSource`, `@NullAndEmptySource`).
 - **100% Coverage Enforced**: The test suite guarantees 100% Line and Branch coverage in the domain package, ensuring no orphan logic exists.
 
@@ -28,3 +28,9 @@ mvn clean test jacoco:report
 
 After running the command, you can view the coverage evidence by opening the generated HTML report:
 `target/site/jacoco/index.html`
+
+## Coverage Evidence
+
+100% line and branch coverage across the whole `fit.tatakae.domain` package:
+
+![JaCoCo coverage report showing 100% line and branch coverage for the fit.tatakae.domain package](docs/jacoco-coverage.png)

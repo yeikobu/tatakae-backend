@@ -162,10 +162,8 @@ public class LeaderboardServiceTest {
         Instant oldestStart = dateExecuted.minusSeconds(3600);
         Instant newestStart = dateExecuted.minusSeconds(600);
 
-        TrainingSession oldestSession =
-                new TrainingSession(user1, exercise, 30, oldestStart, oldestStart.plusSeconds(60), clock);
-        TrainingSession newestSession =
-                new TrainingSession(user2, exercise, 30, newestStart, newestStart.plusSeconds(60), clock);
+        TrainingSession oldestSession = new TrainingSession(user1, exercise, 30, oldestStart, oldestStart.plusSeconds(60), clock);
+        TrainingSession newestSession = new TrainingSession(user2, exercise, 30, newestStart, newestStart.plusSeconds(60), clock);
 
         when(sessionRepository.getAll()).thenReturn(List.of(newestSession, oldestSession));
 
@@ -216,12 +214,9 @@ public class LeaderboardServiceTest {
         Instant end = start.plusSeconds(60);
         Clock clock = Clock.fixed(dateExecuted, ZoneOffset.UTC);
 
-        TrainingSession publicSession =
-                new TrainingSession(publicChileanUser, Exercise.PULL_UP, 20, start, end, clock);
-        TrainingSession privateSession =
-                new TrainingSession(privateChileanUser, Exercise.PULL_UP, 50, start, end, clock);
-        TrainingSession otherExerciseSession =
-                new TrainingSession(squatChileanUser, Exercise.SQUAT, 60, start, end, clock);
+        TrainingSession publicSession = new TrainingSession(publicChileanUser, Exercise.PULL_UP, 20, start, end, clock);
+        TrainingSession privateSession = new TrainingSession(privateChileanUser, Exercise.PULL_UP, 50, start, end, clock);
+        TrainingSession otherExerciseSession = new TrainingSession(squatChileanUser, Exercise.SQUAT, 60, start, end, clock);
 
         when(sessionRepository.getAll())
                 .thenReturn(List.of(publicSession, privateSession, otherExerciseSession));
@@ -272,10 +267,8 @@ public class LeaderboardServiceTest {
         Instant oldestStart = dateExecuted.minusSeconds(3600);
         Instant newestStart = dateExecuted.minusSeconds(600);
 
-        TrainingSession newestSession =
-                new TrainingSession(user1, exercise, 30, newestStart, newestStart.plusSeconds(60), clock);
-        TrainingSession oldestSession =
-                new TrainingSession(user1, exercise, 30, oldestStart, oldestStart.plusSeconds(60), clock);
+        TrainingSession newestSession = new TrainingSession(user1, exercise, 30, newestStart, newestStart.plusSeconds(60), clock);
+        TrainingSession oldestSession = new TrainingSession(user1, exercise, 30, oldestStart, oldestStart.plusSeconds(60), clock);
 
         when(sessionRepository.getAll()).thenReturn(List.of(newestSession, oldestSession));
 
@@ -300,10 +293,8 @@ public class LeaderboardServiceTest {
         Instant oldestStart = dateExecuted.minusSeconds(3600);
         Instant newestStart = dateExecuted.minusSeconds(600);
 
-        TrainingSession oldestSession =
-                new TrainingSession(user1, exercise, 30, oldestStart, oldestStart.plusSeconds(60), clock);
-        TrainingSession newestSession =
-                new TrainingSession(user1, exercise, 30, newestStart, newestStart.plusSeconds(60), clock);
+        TrainingSession oldestSession = new TrainingSession(user1, exercise, 30, oldestStart, oldestStart.plusSeconds(60), clock);
+        TrainingSession newestSession = new TrainingSession(user1, exercise, 30, newestStart, newestStart.plusSeconds(60), clock);
 
         when(sessionRepository.getAll()).thenReturn(List.of(oldestSession, newestSession));
 
