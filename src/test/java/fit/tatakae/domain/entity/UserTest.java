@@ -1,4 +1,4 @@
-package fit.tatakae.domain;
+package fit.tatakae.domain.entity;
 
 import fit.tatakae.domain.exception.InvalidUserException;
 import org.junit.jupiter.api.Test;

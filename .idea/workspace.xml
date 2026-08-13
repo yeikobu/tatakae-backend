@@ -5,11 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0deaee1-159c-4619-89bd-a6c09a5493de" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.claude/settings.local.json" beforeDir="false" afterPath="$PROJECT_DIR$/../.claude/settings.local.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Tatakae.xcodeproj/project.xcworkspace/xcuserdata/Jacob.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../Tatakae.xcodeproj/project.xcworkspace/xcuserdata/Jacob.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tatakae/Data/Services/AICoachService.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../Tatakae/Data/Services/AICoachService.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tatakae/InfoPlist.xcstrings" beforeDir="false" afterPath="$PROJECT_DIR$/../Tatakae/InfoPlist.xcstrings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tatakae/Presentation/AICoach/ProgramCoachViewModel.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../Tatakae/Presentation/AICoach/ProgramCoachViewModel.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fit/tatakae/domain/Exercise.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fit/tatakae/domain/LeaderboardService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fit/tatakae/domain/PrivacyLevel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fit/tatakae/domain/TrainingSession.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fit/tatakae/domain/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fit/tatakae/domain/ports/SessionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fit/tatakae/domain/LeaderboardServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fit/tatakae/domain/TrainingSessionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fit/tatakae/domain/UserTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,12 +35,12 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="3GprFCfB9d10G9FT4qh0AbYlCwF" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -41,51 +49,66 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "JUnit.LeaderboardServiceTest.executor": "Run",
-    "JUnit.LeaderboardServiceTest.shouldBreakRepsTieWithTheOldestSession.executor": "Run",
-    "JUnit.LeaderboardServiceTest.shouldReturnLocalRanking.executor": "Run",
-    "JUnit.LeaderboardServiceTest.shouldReturnOnlyPublicUsersInRanking.executor": "Run",
-    "JUnit.LeaderboardServiceTest.shouldReturnRankingOrderedByRepsDescending.executor": "Run",
-    "JUnit.LeaderboardTest.shouldReturnRankingOrderedByRepsDescending.executor": "Run",
-    "JUnit.TrainingSessionTest.executor": "Run",
-    "JUnit.TrainingSessionTest.isTrainingSessionValid.executor": "Run",
-    "JUnit.TrainingSessionTest.shouldThrowExceptionWhenEndBeginsAfterStart.executor": "Run",
-    "JUnit.TrainingSessionTest.shouldThrowExceptionWhenEndIsBeforeStart.executor": "Run",
-    "JUnit.TrainingSessionTest.shouldThrowExceptionWhenRepsAreInconsistent.executor": "Run",
-    "JUnit.TrainingSessionTest.shouldThrowExceptionWhenStartIsEqualToEnd.executor": "Run",
-    "JUnit.TrainingSessionTest.shouldTrownAndExceptionWhenRepsAreMoreThanTheMaxRepsAllowedPerMinute.executor": "Run",
-    "JUnit.UserTest.executor": "Run",
-    "JUnit.UserTest.isValidUserTest.executor": "Run",
-    "JUnit.UserTest.shouldNotInitializeUserWithNullOrEmprtyUserName.executor": "Run",
-    "JUnit.UserTest.shouldNotInitializeUserWithNullProperties.executor": "Run",
-    "JUnit.UserTest.shouldThrowExceptionWhenUserIdIsNullOrEmpty.executor": "Run",
-    "Maven.tatakae-backend [clean,test...].executor": "Run",
-    "Maven.tatakae-backend [clean].executor": "Run",
-    "Maven.tatakae-backend [org.jacoco:jacoco-maven-plugin:0.8.12:check].executor": "Run",
-    "Maven.tatakae-backend [org.jacoco:jacoco-maven-plugin:0.8.12:report-aggregate].executor": "Run",
-    "Maven.tatakae-backend [org.jacoco:jacoco-maven-plugin:0.8.12:report].executor": "Run",
-    "Maven.tatakae-backend [org.jacoco:jacoco-maven-plugin:0.8.14:report].executor": "Run",
-    "Maven.tatakae-backend [test].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/jacob/Developer/Tatakae/tatakae-backend/src/main/java/org/example/Main.java",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LeaderboardServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LeaderboardServiceTest.shouldBreakRepsTieWithTheOldestSession.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LeaderboardServiceTest.shouldReturnLocalRanking.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LeaderboardServiceTest.shouldReturnOnlyPublicUsersInRanking.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LeaderboardServiceTest.shouldReturnRankingOrderedByRepsDescending.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LeaderboardTest.shouldReturnRankingOrderedByRepsDescending.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TrainingSessionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TrainingSessionTest.isTrainingSessionValid.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TrainingSessionTest.shouldThrowExceptionWhenEndBeginsAfterStart.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TrainingSessionTest.shouldThrowExceptionWhenEndIsBeforeStart.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TrainingSessionTest.shouldThrowExceptionWhenRepsAreInconsistent.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TrainingSessionTest.shouldThrowExceptionWhenStartIsEqualToEnd.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TrainingSessionTest.shouldTrownAndExceptionWhenRepsAreMoreThanTheMaxRepsAllowedPerMinute.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserTest.isValidUserTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserTest.shouldNotInitializeUserWithNullOrEmprtyUserName.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserTest.shouldNotInitializeUserWithNullProperties.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserTest.shouldThrowExceptionWhenUserIdIsNullOrEmpty.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.tatakae-backend [clean,test...].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.tatakae-backend [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.tatakae-backend [org.jacoco:jacoco-maven-plugin:0.8.12:check].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.tatakae-backend [org.jacoco:jacoco-maven-plugin:0.8.12:report-aggregate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.tatakae-backend [org.jacoco:jacoco-maven-plugin:0.8.12:report].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.tatakae-backend [org.jacoco:jacoco-maven-plugin:0.8.14:report].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.tatakae-backend [test].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/jacob/Developer/Tatakae/tatakae-backend/src/main/java/org/example/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Maven.tatakae-backend [clean,test...]">
+    <configuration name="GetLeaderboardUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tatakae-backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fit.tatakae.application.usecase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fit.tatakae.application.usecase" />
+      <option name="MAIN_CLASS_NAME" value="fit.tatakae.application.usecase.GetLeaderboardUseCaseTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LeaderboardServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tatakae-backend" />
       <extension name="coverage">
@@ -112,22 +135,6 @@
       <option name="PACKAGE_NAME" value="fit.tatakae.domain" />
       <option name="MAIN_CLASS_NAME" value="fit.tatakae.domain.LeaderboardServiceTest" />
       <option name="METHOD_NAME" value="shouldBreakRepsTieWithTheOldestSession" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LeaderboardServiceTest.shouldReturnGlobalRankingOrderedByRepsDescending" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="tatakae-backend" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fit.tatakae.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fit.tatakae.domain" />
-      <option name="MAIN_CLASS_NAME" value="fit.tatakae.domain.LeaderboardServiceTest" />
-      <option name="METHOD_NAME" value="shouldReturnGlobalRankingOrderedByRepsDescending" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -198,20 +205,20 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="JUnit.GetLeaderboardUseCaseTest" />
       <item itemvalue="JUnit.LeaderboardServiceTest" />
       <item itemvalue="JUnit.LeaderboardServiceTest.shouldBreakRepsTieWithTheOldestSession" />
-      <item itemvalue="JUnit.LeaderboardServiceTest.shouldReturnGlobalRankingOrderedByRepsDescending" />
       <item itemvalue="JUnit.LeaderboardServiceTest.shouldReturnLocalRanking" />
       <item itemvalue="JUnit.LeaderboardServiceTest.shouldReturnOnlyPublicUsersInRanking" />
       <item itemvalue="Maven.tatakae-backend [clean,test...]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GetLeaderboardUseCaseTest" />
         <item itemvalue="JUnit.LeaderboardServiceTest.shouldBreakRepsTieWithTheOldestSession" />
         <item itemvalue="JUnit.LeaderboardServiceTest" />
         <item itemvalue="JUnit.LeaderboardServiceTest.shouldReturnOnlyPublicUsersInRanking" />
         <item itemvalue="JUnit.LeaderboardServiceTest.shouldReturnLocalRanking" />
-        <item itemvalue="JUnit.LeaderboardServiceTest.shouldReturnGlobalRankingOrderedByRepsDescending" />
       </list>
     </recent_temporary>
   </component>

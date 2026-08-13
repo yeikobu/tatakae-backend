@@ -1,25 +1,25 @@
-package fit.tatakae.domain;
+package fit.tatakae.domain.entity;
 
 import fit.tatakae.domain.exception.InvalidUserException;
 
 public class User {
-    private String userId;
-    private String username;
-    private String country;
-    private PrivacyLevel privacyLevel;
+    private final String userId;
+    private final String username;
+    private final String country;
+    private final PrivacyLevel privacyLevel;
 
     public User(String userId, String username, String country, PrivacyLevel privacyLevel) {
-        this.userId = userId;
-        this.username = username;
-        this.country = country;
-        this.privacyLevel = privacyLevel;
-
         if (userId == null || userId.trim().isEmpty()) {
             throw new InvalidUserException("User id cannot be null or empty");
         }
         if (username == null || username.trim().isEmpty()) {
             throw new InvalidUserException("Username cannot be null or empty");
         }
+
+        this.userId = userId;
+        this.username = username;
+        this.country = country;
+        this.privacyLevel = privacyLevel;
     }
 
     public String getUserId() {

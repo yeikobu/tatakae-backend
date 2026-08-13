@@ -1,6 +1,9 @@
-package fit.tatakae.domain;
+package fit.tatakae.domain.service;
 
-import fit.tatakae.domain.ports.SessionRepository;
+import fit.tatakae.domain.entity.Exercise;
+import fit.tatakae.domain.entity.PrivacyLevel;
+import fit.tatakae.domain.entity.TrainingSession;
+import fit.tatakae.domain.repository.SessionRepository;
 
 import java.util.Comparator;
 import java.util.List;

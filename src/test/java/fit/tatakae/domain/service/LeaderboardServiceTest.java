@@ -1,6 +1,10 @@
-package fit.tatakae.domain;
+package fit.tatakae.domain.service;
 
-import fit.tatakae.domain.ports.SessionRepository;
+import fit.tatakae.domain.entity.Exercise;
+import fit.tatakae.domain.entity.PrivacyLevel;
+import fit.tatakae.domain.entity.TrainingSession;
+import fit.tatakae.domain.entity.User;
+import fit.tatakae.domain.repository.SessionRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

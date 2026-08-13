@@ -1,4 +1,4 @@
-package fit.tatakae.domain;
+package fit.tatakae.domain.entity;
 
 public enum PrivacyLevel {
     PRIVATE,
