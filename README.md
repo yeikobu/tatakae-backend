@@ -24,7 +24,8 @@ fit.tatakae
 
 ## Architecture Highlights
 - **Dependency Rule**: outer layers depend on inner layers, never the reverse. `domain` and `application` have zero imports of frameworks, databases, or `infrastructure` classes.
-- **Tactical DDD**: `TrainingSession` and `User` are Entities with identity (`userId`); `RepsCount` and `SessionTimeframe` are immutable Value Objects (Java `record`) that self-validate in their compact constructor, rejecting invalid data at instantiation.
+- **Tactical DDD**: `TrainingSession` and `User` are Entities with a unique `id` that persists across attribute changes (`equals`/`hashCode` compare by id only, never by attributes); `RepsCount` and `SessionTimeframe` are immutable Value Objects (Java `record`) that self-validate in their compact constructor, rejecting invalid data at instantiation.
+- **Behavior-Rich Entities**: business rules live inside the entities that own them instead of leaking into services — `User.isPublic()` / `isFromCountry(...)`, `TrainingSession.isForExercise(...)` / `outperforms(...)` replace anemic getter comparisons that used to sit in `LeaderboardService`.
 - **Repository Pattern**: `SessionRepository` is a pure interface defined in `domain.repository`. `InMemorySessionRepository` (in `infrastructure.persistence`) is its only implementation — swapping storage technology never touches the domain.
 - **Constructor Injection Only**: Use cases (`RecordTrainingSessionUseCase`, `GetLeaderboardUseCase`) receive their dependencies exclusively through the constructor. No `new ConcreteRepository()` is ever called inside a use case.
 - **English Nomenclature**: Clean, modular code entirely in English, including exception messages.
@@ -55,6 +56,6 @@ After running the command, you can view the coverage evidence by opening the gen
 
 ## Coverage Evidence
 
-100% line and branch coverage across the whole project (399/399 instructions, 28/28 branches):
+100% line and branch coverage across the whole project (476/476 instructions, 32/32 branches):
 
 ![JaCoCo coverage report showing 100% line and branch coverage across every package](docs/jacoco-coverage.png)

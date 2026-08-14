@@ -37,4 +37,28 @@ public class User {
     public PrivacyLevel getPrivacyLevel() {
         return this.privacyLevel;
     }
+
+    public boolean isPublic() {
+        return this.privacyLevel == PrivacyLevel.PUBLIC;
+    }
+
+    public boolean isFromCountry(String otherCountry) {
+        return this.country.equals(otherCountry);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof User other)) {
+            return false;
+        }
+        return this.userId.equals(other.userId);
+    }
+
+    @Override
+    public int hashCode() {
+        return this.userId.hashCode();
+    }
 }

@@ -1,7 +1,6 @@
 package fit.tatakae.domain.service;
 
 import fit.tatakae.domain.entity.Exercise;
-import fit.tatakae.domain.entity.PrivacyLevel;
 import fit.tatakae.domain.entity.TrainingSession;
 import fit.tatakae.domain.repository.SessionRepository;
 
@@ -27,17 +26,17 @@ public class LeaderboardService {
     public List<TrainingSession> getGlobalRanking(Exercise exercise) {
         return rank(
                 sessionRepository.getAll().stream()
-                        .filter(session -> session.getUser().getPrivacyLevel() == PrivacyLevel.PUBLIC)
-                        .filter(session -> session.getExercise() == exercise)
+                        .filter(session -> session.getUser().isPublic())
+                        .filter(session -> session.isForExercise(exercise))
         );
     }
 
     public List<TrainingSession> getLocalRanking(Exercise exercise, String country) {
         return rank(
                 sessionRepository.getAll().stream()
-                        .filter(session -> session.getUser().getPrivacyLevel() == PrivacyLevel.PUBLIC)
-                        .filter(session -> session.getExercise() == exercise)
-                        .filter(session -> session.getUser().getCountry().equals(country))
+                        .filter(session -> session.getUser().isPublic())
+                        .filter(session -> session.isForExercise(exercise))
+                        .filter(session -> session.getUser().isFromCountry(country))
         );
     }
 
@@ -56,9 +55,6 @@ public class LeaderboardService {
 
     // Resolves which of two sessions of the same user belongs in the ranking.
     private static TrainingSession bestSession(TrainingSession first, TrainingSession second) {
-        if (first.getReps() != second.getReps()) {
-            return first.getReps() > second.getReps() ? first : second;
-        }
-        return first.getStart().isAfter(second.getStart()) ? second : first;
+        return first.outperforms(second) ? first : second;
     }
 }
